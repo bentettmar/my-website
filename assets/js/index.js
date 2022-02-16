@@ -30,3 +30,49 @@ frameworks.forEach(framework => {
     li.innerHTML = framework;
     frameworks_list.appendChild(li);
 });
+
+function set_theme_cookie(theme) {
+    document.cookie = `theme=${theme}`;
+}
+
+function get_theme_cookie() {
+    let cookie = document.cookie;
+    let cookie_array = cookie.split(";");
+    let theme_cookie = cookie_array.find(cookie => cookie.includes("theme"));
+    return theme_cookie.split("=")[1];
+}
+
+function check_theme() {
+    let theme_cookie = get_theme_cookie();
+
+    if (theme_cookie === "dark") {
+        document.body.classList.add("dark-mode");
+        theme_changer.innerHTML = light_mode_icon;
+        set_theme_cookie("dark");
+    } else if (theme_cookie === "light") {
+        document.body.classList.remove("dark-mode");
+        document.body.classList.add("light-mode");
+        theme_changer.innerHTML = dark_mode_icon;
+        set_theme_cookie("light");
+    }
+}
+
+let theme_changer = document.getElementById("change theme");
+let dark_mode_icon = `<i class="fa-solid fa-moon"></i>`
+let light_mode_icon = `<i class="fa-solid fa-sun"></i>`
+
+// add event listener to theme changer
+theme_changer.addEventListener("click", () => {
+    if (document.body.classList.contains("dark-mode")) {
+        document.body.classList.remove("dark-mode");
+        document.body.classList.add("light-mode");
+        theme_changer.innerHTML = dark_mode_icon;
+        set_theme_cookie("light");
+    } else {
+        document.body.classList.add("dark-mode");
+        theme_changer.innerHTML = light_mode_icon;
+        set_theme_cookie("dark");
+    }
+});
+
+check_theme();

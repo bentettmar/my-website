@@ -1,35 +1,36 @@
-.body {
+.body,
+.dark-mode {
     background-color: black;
     color: white;
 }
 
-@media (prefers-color-scheme: dark) {
-    .body {
+/* @media (prefers-color-scheme: dark) {
+    .body{
         background-color: black;
         color: white;
     }
 
-    .link-item {border: 1px solid white;}
+     .link-item {border: 1px solid white;}
 
-    .link-item:hover,
-    .link-item-text:hover {
+     .link-item:hover,
+     .link-item-text:hover {
         color: black;
         background-color: white;
     }
 
-    .card {
+     .card {
         border: 1px solid white!important;
         background-color: black!important;
     }
 
-    .card-footer {background-color: #ffffff!important;}
+     .card-footer {background-color: #ffffff!important;}
 
-    .project-btn {
+     .project-btn {
         border: 1px solid black;
         color: black;
     }
 
-    .project-btn:hover {
+     .project-btn:hover {
         color: white;
         background-color: black;
     }
@@ -65,6 +66,67 @@
         color: black;
         background-color: white;
     }
+} */
+
+.light-mode .body {
+    background-color: white;
+    color: black;
+}
+
+.light-mode .link-item {border: 1px solid black;}
+
+.light-mode .link-item:hover,
+.light-mode .link-item-text:hover {
+    color: white;
+    background-color: black;
+}
+
+.light-mode .card {
+    border: 1px solid black!important;
+    background-color: white!important;
+}
+
+.light-mode .card-footer {background-color: #000000!important;}
+
+.light-mode .project-btn {
+    border: 1px solid white;
+    color: white;
+}
+
+.light-mode .project-btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.body,
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode .link-item {border: 1px solid white;}
+
+.dark-mode .link-item:hover,
+.dark-mode .link-item-text:hover {
+    color: black;
+    background-color: white;
+}
+
+.dark-mode .card {
+    border: 1px solid white!important;
+    background-color: black!important;
+}
+
+.dark-mode .card-footer {background-color: #ffffff!important;}
+
+.dark-mode .project-btn {
+    border: 1px solid black;
+    color: black;
+}
+
+.dark-mode .project-btn:hover {
+    color: white;
+    background-color: black;
 }
 
 #typing-effect, .console-font {
@@ -76,6 +138,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 .link-list {
