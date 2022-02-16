@@ -9,7 +9,7 @@ function type_writer() {
     if (i < text.length) {
         typing_effect.innerHTML += text.charAt(i);
         i++;
-        setTimeout(type_writer, 150);
+        setTimeout(type_writer, 85);
     } else {
         setTimeout(() => {
             typing_effect.innerHTML = "";
@@ -19,7 +19,7 @@ function type_writer() {
                 text_index = 0;
             }
             type_writer();
-        }, 2500);
+        }, 3000);
     }
 }
 
