@@ -76,3 +76,17 @@ theme_changer.addEventListener("click", () => {
 });
 
 check_theme();
+
+function seizure() {
+    // spam switch the theme button
+    let seizure_interval = setInterval(() => {
+        if (document.body.classList.contains("dark-mode")) {
+            document.body.classList.remove("dark-mode");
+            document.body.classList.add("light-mode");
+            theme_changer.innerHTML = dark_mode_icon;
+        } else {
+            document.body.classList.add("dark-mode");
+            theme_changer.innerHTML = light_mode_icon;
+        }
+    }, 1);
+}
