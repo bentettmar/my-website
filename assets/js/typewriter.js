@@ -9,7 +9,7 @@ function type_writer() {
     if (i < text.length) {
         typing_effect.innerHTML += text.charAt(i);
         i++;
-        setTimeout(type_writer, 85);
+        setTimeout(type_writer, 65);
     } else {
         setTimeout(() => {
             typing_effect.innerHTML = "";

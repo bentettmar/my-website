@@ -158,6 +158,7 @@
     border-radius: 15px;
     min-width: 40px;
     text-align: center;
+    transition: all .15s;
 }
 
 .link-item a, 
@@ -169,6 +170,7 @@
 
 .card {
     border-radius: 8px!important;
+    transition: all .15s;
 }
 
 .card-no-hover:hover {
@@ -196,6 +198,7 @@
     min-width: 40px;
     text-align: center;
     text-decoration: none;
+    transition: all .15s;
 }
 
 .lowercase {
