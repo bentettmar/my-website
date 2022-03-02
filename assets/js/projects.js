@@ -19,6 +19,11 @@ let projects = [
         "name": "Gato Bot",
         "description": "A simple multi-purpose Discord bot with fun and useful features.",
         "link": "https://gato.benny.fun/"
+    },
+    {
+        "name": "Flask File Hosting",
+        "description": "A file host created in flask for one person. Great for an easy way to move files in your network.",
+        "link": "https://github.com/bentettmar/flask-file-hosting"
     }
 ]
 
@@ -28,7 +33,7 @@ projects.forEach(project => {
     let link = project["link"];
 
     let card = `
-        <div class="col-lg-6 col-sm-12 mb-3">
+        <div class="col-lg-4 col-sm-12 mb-3">
             <div class="card h-100">
                 <div class="card-body">
                     <h5 class="lowercase">${name}</h5>
