@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="800px">
+    <defs><style></style></defs>
+    <style data-optimizable="true">h1,h2,h3,h4,h5{font-family:Consolas,monospace;color:#4078c0}a,p{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif}p{color:#6c6c6c}.card{border-radius:8px!important;transition:all .15s;border-radius:8px;border:1px solid #6c6c6c}.card h1,h2,h3,h4,h5{margin:0}.card-body{padding:1rem}.card p{margin:0;margin-top:4px}.card-footer{display:flex;flex-direction:row;justify-content:space-between}.skills-list{list-style:none;padding:0;display:flex;flex-direction:row}.skills-list li{margin-right:10px;padding:5px 10px;border-radius:15px;min-width:40px;text-align:center}.grid{display:grid;grid-template-columns:repeat(2,1fr);grid-gap:10px;margin-top:10px}a{text-decoration:none;color:inherit}a:hover{text-decoration:underline}</style>
+    
+    <foreignObject class="node" x="0" y="0" width="100%" height="100%">
+        <body xmlns="http://www.w3.org/1999/xhtml">
+            <div id="start">
+                <h1 style="margin: 0px;">ben tettmar</h1>
+                <p style="margin-top: 5px;"><strong>hey!</strong>  i am a 16-year-old student and developer from the <strong>united kingdom</strong>.</p>
+            </div>
+
+            <div id="about" style="text-align: right; margin-top: 4em;">
+                <h1 style="margin: 0px;">about me</h1>
+                <p style="margin-top: 5px; margin-bottom: 0px;">i am a software developer and i specialise in <strong>python</strong>, <strong>html</strong> and <strong>css</strong>.</p>
+                <p style="margin: 0px;">i am currently studying <strong>computer science</strong> and <strong>graphics communications</strong> at secondary school.</p>
+            </div>
+
+            <div id="projects" style="text-align: left; margin-top: 4em;">
+                <h1 style="margin: 0px; margin-bottom: 25px;">projects</h1>
+                <div class="grid">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>menu note</h2>
+                            <p>an open source note taking app for mac os that uses the menu bar.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>benny's api</h2>
+                            <p>a multi-purpose api filled with fun endpoints and image generation.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>gato bot</h2>
+                            <p>a simple multi-purpose discord bot with fun and useful features.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>ip info</h2>
+                            <p>a terminal tool for getting information about an ip address.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p style="margin-top: 200px; font-style: italic;">⬇️ you should look at my pinned repos ;)</p>
+        </body>
+    </foreignObject>
+</svg>
