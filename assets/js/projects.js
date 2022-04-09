@@ -1,6 +1,11 @@
 let projects_row = document.getElementById('projects-row');
 let projects = [
     {
+        "name": "Frost", 
+        "description": "A public and open source one to one chat app.", 
+        "link": "https://github.com/frostchat"
+    },
+    {
         "name": "Menu Note", 
         "description": "An open source note taking app for Mac OS that uses the menu bar.", 
         "link": "https://menunote.app"
@@ -11,9 +16,9 @@ let projects = [
         "link": "https://api.benny.fun"
     },
     {
-        "name": "IP Info",
-        "description": "A terminal tool for getting information about an IP address.",
-        "link": "https://github.com/bentettmar/ipinfo"
+        "name": "IPInfo",
+        "description": "A Mac OS IP geolocate tool for your Menu Bar",
+        "link": "https://ipinfo.benny.fun/"
     },
     {
         "name": "Gato Bot",
