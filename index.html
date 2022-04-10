@@ -5,85 +5,129 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="software developer, software engineer, programmer">
 
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Ben Tettmar">
-        <meta name="twitter:description" content="Student, Developer and Mountain Biker from the UK">
+        <meta name="twitter:description" content="Student and software developer from the United Kingdom">
 
-        <link rel="stylesheet" href="assets/css/style.css?ver=1">
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     </head>
-    <body class="light-mode">
-        <div id="container" style="position: relative;" class="container py-5 my-5">
-            <div class="top-right">
-                <ul class="link-list">
-                    <li class="link-item"><a id="change theme" class="no-hover"><i class="fa-solid fa-moon"></i></a></li>
-                </ul>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-                    <div id="info">
-                        <h1 id="typing-effect" class="fw-bold"></h1>
-                        <p class="lowercase" style="width: 40ch;"><strong>Hey!</strong> I am a <span id="age"></span>-year-old student and developer from the <strong>United Kingdom</strong>. I've been programming for 2 years and have learnt HTML, CSS, JavaScript, Python and PHP. I am currently learning Swift.</p>
-                        <!-- <p class="lowercase">I like to program scripts and web apps using <strong>Python</strong> and<strong>Javascript</strong>.</p> -->
-                        <ul class="link-list">
-                            <li class="link-item"><a href="mailto:bentettmar@yahoo.com" id="contact"><i class="fa-solid fa-envelope"></i></a></li>
-                            <li class="link-item"><a href="https://github.com/bentettmar" id="github"><i class="fa-brands fa-github"></i></a></li>
-                            <li class="link-item"><a href="https://instagram.com/ben.tettmar" id="instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li class="link-item"><a href="https://twitter.com/bentettmar" id="twitter"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li class="link-item"><a href="https://www.youtube.com/channel/UCWndwytKhYWQ1XkvnfMUJMw" id="youtube"><i class="fa-brands fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-5 row">
-                <div class="col-lg-3 col-sm-12" style="position: relative;" onclick="secret_rps();">
-                    <div class="center">
-                        <h5 id="secret-msgs"></h5>
+    <body class="body">
+        <div class="container py-5 my-5">
+            <center>
+                <div>
+                    <div class="mb-5">
+                        <h1 class="fw-bold" id="title">Ben Tettmar</h1>
+                        <h5 class="text-grey" id="moto">Student and software developer from the United Kingdom</h5>
                     </div>
 
-                    <div id="rps" class="center text-center" style="display: none;">
-                        <div class="card card-no-hover">
-                            <div class="card-body">
-                                <h5 class="card-title lowercase" id="rps-title">Rock, Paper, Scissors</h5>
-                                <p class="lowercase" id="rps-desc"></p>
-                                <ul class="link-list mb-0 mt-4" style="justify-content: center;">
-                                    <li class="link-item"><a onclick="rps_play('rock')"><i class="fa-solid fa-hand-back-fist"></i></a></li>
-                                    <li class="link-item"><a onclick="rps_play('paper')"><i class="fa-solid fa-hand"></i></a></li>
-                                    <li class="link-item" style="margin: 0px;"><a onclick="rps_play('scissors')"><i class="fa-solid fa-hand-scissors"></i></a></li>
-                                </ul>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <div class="section mt-5" style="text-align: left;">
+                                <div class="row">
+                                    <div class="col-md-8 mb-4">
+                                        <h3 class="fw-bold">About Me</h3>
+                                        <p class="text-grey">I am a 16-year-old software developer from the United Kingdom. I've been programming for 2 years and have learnt Python, HTML, CSS, JavaScript, PHP and Swift.</p>
+                                        <a href="#" onclick="continueAboutMe()" id="continue-reading-btn">Read more...</a>
+                                        <div id="continue-reading" style="display: none;">
+                                            <p class="text-grey">I started programming when I was 14 in HTML by making a basic flash games website. Ever since i've been really interested in what i can make using my skills. Recently i've started to focus on desktop applications for Mac OS and Windows.</p>
+                                            <p class="text-grey">Programming is not my only passion. I enjoy to go Mountain Biking, creating illustrations and graphics and composing music.</p>
+                                        
+                                            <a href="#" onclick="hideAboutMe()">Read less...</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="assets/me.jpg" class="img-fluid" style="border-radius: 15px;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section mt-3 socials-wrapper">
+                                <a href="https://github.com/bentettmar"><i class="fa-brands fa-github fa-2x m-3 socials-icon"></i></a>
+                                <a href="https://instagram.com/ben.tettmar"><i class="fa-brands fa-instagram fa-2x m-3 socials-icon"></i></a>
+                                <a href="https://twitter.com/bentettmar"><i class="fa-brands fa-twitter fa-2x m-3 socials-icon"></i></a>
+                                <a href="mailto:bentettmar@yahoo.com"><i class="fa-solid fa-envelope fa-2x m-3 socials-icon"></i></a>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="section mt-3" style="text-align: left;">
+                                        <h3 class="fw-bold mb-4">My Apps</h3>
+                                        <div class="apps-wrapper">
+                                            <a href="https://ipinfo.benny.fun/" class="app-link">
+                                                <div id="ipinfo" class="app-wrapper">
+                                                    <!-- <img src="https://ipinfo.benny.fun/assets/icon.png" class="img-fluid" style="height: 100px;"> -->
+                                                    <div style="text-align: left;">
+                                                        <h5 class="fw-bold" id="title">IPInfo</h5>
+                                                        <p class="text-grey p-0 m-0">IP geolocate tool for your Menu Bar</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="https://menunote.app/" class="app-link">
+                                                <div id="menunote" class="app-wrapper">
+                                                    <!-- <img src="https://menunote.app/assets/icon.png?v=1" class="img-fluid" style="height: 100px;"> -->
+                                                    <div style="text-align: left;">
+                                                        <h5 class="fw-bold" id="title">Menu Note</h5>
+                                                        <p class="text-grey p-0 m-0">Quick note taking in your menu bar</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="section mt-3" style="text-align: left;">
+                                        <h3 class="fw-bold mb-4">My Projects</h3>
+                                        <!-- <p class="text-grey mb-4">View more on my <a href="https://github.com/bentettmar">Github</a></p> -->
+                                        <div class="apps-wrapper">
+                                            <a href="https://github.com/FrostChat" class="app-link">
+                                                <div id="frost" class="app-wrapper">
+                                                    <div style="text-align: left;">
+                                                        <h5 class="fw-bold" id="title">Frost</h5>
+                                                        <p class="text-grey p-0 m-0">A public and open source one to one chat app</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="https://github.com/bentettmar/nertivia4py" class="app-link">
+                                                <div id="nertivia4py" class="app-wrapper">
+                                                    <div style="text-align: left;">
+                                                        <h5 class="fw-bold" id="title">Nertivia4PY</h5>
+                                                        <p class="text-grey p-0 m-0">A Python wrapper for the Nertivia API</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="https://github.com/bentettmar/py-cookie-clicker" class="app-link">
+                                                <div id="pycookieclicker" class="app-wrapper">
+                                                    <div style="text-align: left;">
+                                                        <h5 class="fw-bold" id="title">Python Cookie Clicker</h5>
+                                                        <p class="text-grey p-0 m-0">A Python Cookie Clicker clone, made completely with tkinter</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <div class="col-md-2"></div>
                     </div>
                 </div>
-
-                <div class="col-lg-3 col-sm-12 mb-4" style="display: none;">
-                    <h1 class="fw-bold text-start console-font lowercase mb-3" id="skills">Skills</h1>
-                    <div class="row">
-                        <div class="col-12">
-                            <ul id="languages-list" class="skills-list mb-0"></ul>
-                        </div>
-                        <div class="col-12">
-                            <ul id="frameworks-list" class="skills-list"></ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-9 col-sm-12">
-                    <h1 class="fw-bold text-end console-font lowercase mb-3" id="projects">Projects</h1>
-                    <div class="row" id="projects-row"></div>
-                </div>
-            </div>
+            </center>
         </div>
 
-        <script src="/assets/js/age.js?ver=1"></script>
-        <script src="/assets/js/rps.js?ver=1"></script>
-        <script src="/assets/js/links.js?ver=1"></script>
-        <script src="/assets/js/typewriter.js?ver=1"></script>
-        <script src="/assets/js/projects.js?ver=1"></script>
-        <script src="/assets/js/index.js?ver=1"></script>
+        <div class="container pb-2">
+            <center>
+                <div id="footer">
+                    <p class="text-grey">&copy; 2022 &mdash; <a href="https://benny.fun/">Ben Tettmar</a></p>
+                </div>
+            </center>
+        </div>
+        
+        <script src="assets/script.js"></script>
         <script src="https://kit.fontawesome.com/bbd7036ee1.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
